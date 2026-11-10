@@ -311,6 +311,7 @@ def test_default_lexicon_builds_warning_free() -> None:
 def test_default_lexicon_ships_korean_surnames_only() -> None:
     lex = Lexicon.default()
     assert "김" in lex.surnames and "남궁" in lex.surnames
+    assert "라" in lex.surnames and "어" in lex.surnames
     # Han surnames are locales.ZH's cargo (segmentation opt-in), so
     # the DEFAULT set is wholly hangul -- structural check, not
     # content-pinning. The span comes from the shared table rather than

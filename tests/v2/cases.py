@@ -16319,6 +16319,18 @@ CASES: tuple[Case, ...] = (
                "written unspaced, the floor the other shape-6 rows "
                "vary from",
          shape=6),
+    Case("ko_unspaced_surname_eo", "어기구",
+         {"family": "어", "given": "기구"},
+         classification="fix(#1215)",
+         notes="어 is a census surname (#1215): single-syllable surname "
+               "above 두 in 2015 census rank order",
+         shape=6),
+    Case("ko_unspaced_surname_ra", "라미란",
+         {"family": "라", "given": "미란"},
+         classification="fix(#1215)",
+         notes="라 is a census surname (#1215): single-syllable surname "
+               "above 두 in 2015 census rank order",
+         shape=6),
     Case("ko_two_syllable_surname_default", "남궁민수",
          {"family": "남궁", "given": "민수"},
          classification="fix(#271)",
